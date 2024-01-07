@@ -1,0 +1,180 @@
+.lea_buttons {
+    margin: 15px 0;
+}
+.lea_text {
+    padding: 10px 0;
+    color: #20a0ff;
+}
+.selectPool {
+    background-color: #eef1f6;
+    border-radius: 2px;
+    padding: 8px;
+    border: 1px solid #dfe6ec;
+    .selectPool_text {
+        text-align: center;
+        font-weight: 600;
+    }
+    .selectPool_input {
+        margin-top: 10px;
+        .el-date-editor.el-input {
+            width: 100%;;
+        }
+        .el-input__inner {
+            border-radius: 2px;
+            border: 1px solid #eef1f6;
+        }
+    }
+}
+.lea_apply_edit {
+    .el-dialog {
+        width: 950px;
+        top: 10% !important;
+    }
+}
+.applyEdit_img_div {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    .applyEdit_img {
+        height: 390px;
+        border-bottom: 5px double #ddd;
+    }
+}
+.selectInput {
+    padding: 15px 0;
+    border-top: 1px solid #666;
+    .selectInput_col {
+        margin-bottom: 15px;
+    }
+    .seleectInput_text {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .seleectInput_text2 {
+        width: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+    }
+    .seleectInput_value {
+        display: inline-block;
+        width: calc(100% - 43%) !important;
+    }
+    .seleectInput_value2{
+        display: inline-block;
+        width: calc(100% - 43% - 55px) !important;
+    }
+}
+.content-container {
+    margin: 25px 20px 20px 20px;
+}
+.repair {
+    .el-form-item__label {
+        width: 250px !important;
+    }
+}
+
+//填表css
+.fillFrom {
+    width: 500px;
+    margin: 0 auto;
+    .fillFrom_head {
+        margin: 15px 0;
+        input {
+            font-size: 24px;
+            border: 1px solid #fff;
+            border-bottom: 1px solid #bfcbd9;
+        }
+    }
+    .fillFrom_body {
+        margin: 15px 0;
+        .fillFrom_body_li_text, .fillFrom_body_li_input {
+            float: left
+        }
+        .fillFrom_body_li_text {
+            width: 80px;
+            position: relative;
+            padding: 6px 10px;
+            color: rgb(185, 185, 185);
+            border: 1px solid rgb(217, 217, 217);
+            background-color: rgb(252, 252, 252);
+            >span {
+                display: inline-block;
+                width: 80%;
+            }
+            > i {
+                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+            }
+            .fillFrom_icon_select, .fillFrom_icon_select2 {
+                position: absolute;
+                left: 60px;
+                z-index: 9;
+                color: #333;
+                background-color: #fff;
+                box-shadow: 0px 0px 10px #999;
+                white-space:nowrap;
+                padding: 8px 0;
+                .fillFrom_icon_option {
+                    position: relative;
+                    padding: 5px 15px;
+                    cursor: pointer;
+                    i.el-icon-arrow-right {
+                        margin-left: 30px;
+                        font-size: 12px;
+                    }
+                    i.el-icon-check {
+                        position: absolute;
+                        top: 50%;
+                        font-size: 12px;
+                        transform: translateY(-50%);
+                    
+                    }
+                    span.noChildren {
+                        margin-left: 46px;
+                    }
+                }
+                .fillFrom_icon_option:hover {
+                    background-color: rgb(235, 235, 235);
+                }
+            }
+            .fillFrom_icon_select2 {
+                left: 100%;
+                top: -8px;
+            }
+        }
+        .fillFrom_body_li_input {
+            width: calc(100% - 103px);
+            border: 1px solid rgb(217, 217, 217);
+            border-left: 0px;
+            input {
+                border: 0px;
+                height: auto;
+                padding: 8px 10px;
+            }
+        }
+        .fillFrom_body_li + .fillFrom_body_li {
+            .fillFrom_body_li_text, .fillFrom_body_li_input {
+                border-top: 0px;
+            }
+        }
+        .fillFrom_body_addBtn {
+            height: 32px;
+            line-height: 32px;
+            color: rgb(185, 185, 185);
+            border: 1px solid rgb(217, 217, 217);
+            border-top: 0px;
+            padding: 0 10px;
+            cursor: pointer;
+            i {
+                margin-right: 12px;
+            }
+        }
+        .fillFrom_delete_disabled {
+            color: #bbb;
+            cursor: not-allowed !important;
+        }
+    }
+}
